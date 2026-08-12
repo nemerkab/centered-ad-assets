@@ -21,15 +21,19 @@ MUTED = "rgba(255,255,255,0.55)"
 BORDER = "rgba(255,255,255,0.10)"
 SOFT = "rgba(255,255,255,0.08)"
 
-SIZES = {"1x1": (1080, 1080), "4x5": (1080, 1350)}
+SIZES = {
+    "1x1": (1080, 1080),
+    "4x5": (1080, 1350),
+    "9x16": (1080, 1920),  # Reels / Stories — avoid 4:5 letterboxing
+}
 
 # layout: "left" = editorial stack, "center" = pitch-style hero
 ADS = [
     {
-        "slug": "01-weeks-not-months",
+        "slug": "01-days-not-months",
         "layout": "center",
         "badge": "Free strategy call",
-        "head": ["Ship production-ready", "software in weeks —", "not months."],
+        "head": ["Ship", "production-ready", "software in days —", "not months."],
         "body": "Tell us about your project. We'll map the fastest path to a live product — or tell you if we're not a fit.",
         "cta": "Apply for a free strategy call →",
     },
@@ -38,7 +42,7 @@ ADS = [
         "layout": "left",
         "badge": "For founders who built it themselves",
         "head": ["Vibe-coded", "MVP.", "Production", "next."],
-        "body": "You got early traction with Cursor, Replit, or Lovable. We'll harden it for real users — without throwing away your progress.",
+        "body": "You got early traction with AI coding tools. We'll harden it for real users — without throwing away your progress.",
         "cta": "Apply →",
     },
     {
@@ -62,14 +66,14 @@ ADS = [
         "layout": "left",
         "badge": "Senior-led / AI-accelerated",
         "head": ["Senior", "judgment.", "Machine", "speed."],
-        "body": "AI writes code fast. It doesn't know what to build. We bring the judgment that decides — and ships production-ready software in weeks.",
+        "body": "AI writes code fast. It doesn't know what to build. We bring the judgment that decides — and ships production-ready software in days.",
         "cta": "Apply →",
     },
     {
         "slug": "06-idea-to-live",
         "layout": "center",
         "badge": "Client outcome",
-        "head": ["Idea to live", "product in", "2–8 weeks."],
+        "head": ["Idea to live", "product", "in days."],
         "body": "Not a prototype stuck in staging. A deployed, user-ready product — scoped ruthlessly and built to last.",
         "cta": "Apply for a free strategy call →",
     },
@@ -78,7 +82,7 @@ ADS = [
         "layout": "left",
         "badge": "AI-native software agency",
         "head": ["Zero", "agency", "drag."],
-        "body": "No status-meeting theater. No junior handoffs. Senior engineers shipping production software in weeks.",
+        "body": "No status-meeting theater. No junior handoffs. Senior engineers shipping production software in days.",
         "cta": "Apply →",
     },
     {
@@ -101,7 +105,7 @@ ADS = [
         "slug": "10-launch-sprint",
         "layout": "center",
         "badge": "Launch Sprint",
-        "head": ["Scoped. Built.", "Deployed", "in weeks."],
+        "head": ["Scoped. Built.", "Deployed", "in days."],
         "body": "MVP, internal tool, automation, or high-value milestone — then a clear post-launch roadmap if you want to keep shipping.",
         "cta": "Apply for a free strategy call →",
     },
@@ -111,7 +115,7 @@ ADS = [
         "layout": "center",
         "badge": "Vibe-coded → production-ready",
         "head": ["You built it.", "We'll take it", "from here."],
-        "body": "Hand us the Cursor / Replit / Lovable MVP. Senior engineers harden it for real users — auth, infra, reliability — without a rewrite.",
+        "body": "Hand us the vibe-coded MVP. Senior engineers harden it for real users — auth, infra, reliability — without a rewrite.",
         "cta": "Apply for a free strategy call →",
     },
     {
@@ -141,7 +145,7 @@ ADS = [
     {
         "slug": "15-vibe-code-ceiling",
         "layout": "center",
-        "badge": "Cursor · Replit · Lovable",
+        "badge": "AI demos → production",
         "head": ["Vibe code", "got you here.", "Pros get you", "to production."],
         "body": "AI tools ship demos fast. Production needs judgment, infrastructure, and a team that owns the outcome. That's us.",
         "cta": "Apply for a free strategy call →",
@@ -156,6 +160,11 @@ SCALE = {
     "4x5": dict(
         pad=80, inset=40, badge=24, hs=104, gap=34, bs=30, bw=880,
         fgap=52, fpad=32, logo=36, cta=26, pill_y=20, pill_x=32,
+    ),
+    "9x16": dict(
+        # Same content width as 4x5-ish; extra height is breathing room, not bigger type
+        pad=88, inset=44, badge=24, hs=96, gap=36, bs=30, bw=860,
+        fgap=64, fpad=36, logo=36, cta=26, pill_y=20, pill_x=32,
     ),
 }
 
@@ -180,10 +189,13 @@ def render_html(ad: dict, key: str, w: int, h: int) -> str:
     footer_justify = "center" if layout == "center" else "space-between"
     footer_gap = "28px" if layout == "center" else "0"
 
-    # slightly tighter headline on longer lines for center layouts
+    # tighten headline when the longest line would overflow ~1080 canvases
     hs = s["hs"]
-    if layout == "center" and max(len(x) for x in ad["head"]) > 18:
-        hs = int(hs * 0.88)
+    longest = max(len(x) for x in ad["head"])
+    if longest > 22:
+        hs = int(hs * 0.82)
+    elif longest > 18:
+        hs = int(hs * 0.90)
 
     return f"""<!doctype html>
 <html lang="en">

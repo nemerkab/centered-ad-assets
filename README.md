@@ -7,7 +7,7 @@ Brand tokens taken from centeredsoftware.com.
 
 | Folder | Destination | Notes |
 |---|---|---|
-| `start-apply/` | `/start/apply` | **Current** — 10 concepts, 1:1 + 4:5 PNGs, Meta copy in `CONCEPTS.md` |
+| `start-apply/` | `/start/apply` | **Current** — concepts + 1:1 / 4:5 / 9:16 PNGs, Meta copy in `CONCEPTS.md` |
 | Root `build.py` + `images/` | Earlier exploratory set (4 concepts) | Superseded for the apply funnel |
 
 ### `start-apply/` (use this)

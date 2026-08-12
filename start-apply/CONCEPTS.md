@@ -2,19 +2,25 @@
 
 Destination: `https://centeredsoftware.com/start/apply`
 
-Promise the landing page keeps: free strategy call → honest fit check → path to production-ready software in weeks (not months).
+Promise the landing page keeps: free strategy call → honest fit check → path to production-ready software in days (not months).
 
-Primary text / headline / description below are ready for Meta Ads Manager. Images: `images/*-1x1.png` and `images/*-4x5.png`.
+Primary text / headline / description below are ready for Meta Ads Manager.
+
+Images: `images/*-1x1.png` (feed), `*-4x5.png` (feed), `*-9x16.png` (Reels/Stories).
+
+**Trademark note:** Do not put third-party product names (Cursor, Replit, Lovable, etc.) in the ad image. Prefer generic “AI coding tools” / “vibe-coded MVP” in both creative and primary text — Meta trademark complaints are fast and unilateral.
+
+**Timeline note:** Ads, homepage, and `/start/apply` use **days** (vs months/quarters). Keep that frame in creative and primary text.
 
 ---
 
-## 01 — weeks-not-months
+## 01 — days-not-months
 
 **Angle:** Hero promise (speed)
 
-**Primary text:** Most agencies sell you months. We think in weeks. Apply for a free strategy call and we'll map the fastest path to production-ready software — or tell you if we're not the right team.
+**Primary text:** Most agencies sell you months. We think in days. Apply for a free strategy call and we'll map the fastest path to production-ready software — or tell you if we're not the right team.
 
-**Headline:** Ship in weeks — not months
+**Headline:** Ship in days — not months
 
 **Description:** Free strategy call for founders & operators
 
@@ -24,7 +30,7 @@ Primary text / headline / description below are ready for Meta Ads Manager. Imag
 
 **Angle:** ICP — vibe-coded MVP needs hardening
 
-**Primary text:** Built your MVP with Cursor, Replit, or Lovable? Nice. Now make it production-ready. Apply for a free strategy call — we'll help you harden what you've already got without throwing the progress away.
+**Primary text:** Built your MVP with AI coding tools? Nice. Now make it production-ready. Apply for a free strategy call — we'll help you harden what you've already got without throwing the progress away.
 
 **Headline:** Vibe-coded MVP → production
 
@@ -60,21 +66,21 @@ Primary text / headline / description below are ready for Meta Ads Manager. Imag
 
 **Angle:** Positioning — senior judgment + AI
 
-**Primary text:** AI writes code fast. It doesn't know what to build. Centered pairs senior engineering judgment with machine speed so you ship production-ready software in weeks — not a prototype stuck in staging.
+**Primary text:** AI writes code fast. It doesn't know what to build. Centered pairs senior engineering judgment with machine speed so you ship production-ready software in days — not a prototype stuck in staging.
 
 **Headline:** Senior judgment. Machine speed.
 
-**Description:** Production-ready software in weeks
+**Description:** Production-ready software in days
 
 ---
 
 ## 06 — idea-to-live
 
-**Angle:** Concrete outcome (2–8 weeks)
+**Angle:** Concrete outcome (speed)
 
-**Primary text:** From a rough idea to a live, user-ready product in 2–8 weeks — not a demo sitting in staging. Apply for a free strategy call and we'll scope the fastest honest path to launch.
+**Primary text:** From a rough idea to a live, user-ready product in days — not a demo sitting in staging. Apply for a free strategy call and we'll scope the fastest honest path to launch.
 
-**Headline:** Idea → live product in weeks
+**Headline:** Idea → live product in days
 
 **Description:** Scoped. Built. Deployed.
 
@@ -96,7 +102,7 @@ Primary text / headline / description below are ready for Meta Ads Manager. Imag
 
 **Angle:** Reduce barrier to apply
 
-**Primary text:** Come with your problem — not a perfect spec. On a free strategy call we'll help you figure out what to build now vs later, then map a path to production-ready software in weeks.
+**Primary text:** Come with your problem — not a perfect spec. On a free strategy call we'll help you figure out what to build now vs later, then map a path to production-ready software in days.
 
 **Headline:** Bring the problem. We'll scope it.
 
@@ -120,9 +126,9 @@ Primary text / headline / description below are ready for Meta Ads Manager. Imag
 
 **Angle:** Offer productization
 
-**Primary text:** Need an MVP, internal tool, or high-value milestone shipped — scoped, built, and deployed in weeks? Apply for a free strategy call. We'll tell you if a Launch Sprint is the right move, or if you need something else.
+**Primary text:** Need an MVP, internal tool, or high-value milestone shipped — scoped, built, and deployed in days? Apply for a free strategy call. We'll tell you if a Launch Sprint is the right move, or if you need something else.
 
-**Headline:** Launch Sprint: weeks, not months
+**Headline:** Launch Sprint: days, not months
 
 **Description:** Free strategy call to see if it fits
 
@@ -138,7 +144,7 @@ Angles for founders who vibe-coded an MVP and need Centered to take over / harde
 
 **Angle:** Handoff / takeover
 
-**Primary text:** Built it in Cursor, Replit, or Lovable? Hand it over. We'll take your vibe-coded MVP and make it production-ready — auth, infra, reliability — without throwing away what already works. Apply for a free strategy call.
+**Primary text:** Built a vibe-coded MVP? Hand it over. We'll make it production-ready — auth, infra, reliability — without throwing away what already works. Apply for a free strategy call.
 
 **Headline:** You built it. We'll take it from here.
 
@@ -178,15 +184,15 @@ Angles for founders who vibe-coded an MVP and need Centered to take over / harde
 
 **Headline:** Traction without engineering is a trap
 
-**Description:** Senior engineers. Production-ready. Weeks.
+**Description:** Senior engineers. Production-ready. Days.
 
 ---
 
 ## 15 — vibe-code-ceiling
 
-**Angle:** Tool ceiling (Cursor / Replit / Lovable)
+**Angle:** Tool ceiling (AI coding demos → production)
 
-**Primary text:** Cursor, Replit, and Lovable got you a working demo. Production needs judgment, infrastructure, and a team that owns the outcome. Apply for a free strategy call — we'll tell you if we're the right takeover partner.
+**Primary text:** AI coding tools got you a working demo. Production needs judgment, infrastructure, and a team that owns the outcome. Apply for a free strategy call — we'll tell you if we're the right takeover partner.
 
 **Headline:** Vibe code got you here. Pros get you to production.
 
